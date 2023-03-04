@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+             a[href="https://www.google.co.in/imghp?hl=en&ogbl"]{
+                color:black;
+            }
+            h1{
+                text-align: right;
+                font-size: small;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .searchbar{
+            max-width: 550px;
+            display:flex;
+            border-radius: 60px;
+            padding: 10px 20px;
+            border: none;
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;
+             margin-left: auto;
+            margin-right: auto;
+            width: 50%; 
+            }
+            .buttons{
+                align-items: center;
+                border-radius: 4px;
+                padding: 12px 30px;
+                border: #F1F1F1;
+                background-color: #F1F1F1;
+            }
+            .buttons:hover{
+               border: 2px solid #D1D1D1;
+            }
+            .searchbar:hover{
+                border:2px solid      grey;
+            }
+            .center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><a href="http://127.0.0.1:5500/image.html">Image Search</a>
+        <a href="http://127.0.0.1:5500/advanced.html">Advanced Search</a></h1>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google pic" class="center" width="272" height="150">
+        <form action="https://www.google.com/search">
+            <input type="text" placeholder="" name="q" class="searchbar">
+            <input type="submit" value="Google Search" class="buttons">
+            <form action="https://www.google.com/doodles">
+                <input type="submit" value="I'm Feeling Lucky" class="buttons">
+            </form>
+    </body>
+</html>
